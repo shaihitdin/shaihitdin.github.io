@@ -3,7 +3,7 @@
 <h1> Second Form of UFF</h1>
 
 <form action="third_form.html">
-<input name="second_form.html"/>
+<input name="second_form"/>
 <input name="password" type="password"/>
 <button class="button"> Press me!</button>
 </form>
@@ -13,6 +13,6 @@
         location.href = "third_form.html";
     };
     const params = new URLSearchParams(document.location.search);
-    const s = params.get("hello.html");
-    document.getElementById("second_form.html").value = s
+    const s = params.get("hello");
+    document.getElementById("second_form").value = s
 </script>
