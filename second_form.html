@@ -12,4 +12,8 @@
     document.getElementById("myButton").onclick = function () {
         location.href = "third_form.html";
     };
+    //http://localhost:8080/GisProject/MainService?s=C&o=1
+    const params = new URLSearchParams(document.location.search);
+    const s = params.get("hello.html");
+    document.getElementById("second_form.html").value = s
 </script>
