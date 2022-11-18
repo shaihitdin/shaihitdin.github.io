@@ -12,10 +12,10 @@
     document.getElementById("myButton").onclick = function () {
         location.href = "third_form.html";
     };
-    window.addEventListener("load", function()
+    window.onload = (event) =>
     {
         const params = new URLSearchParams(document.location.search);
         const s = params.get("hello");
         document.getElementById("second_form").value = s
-    }, false);
+    };
 </script>
