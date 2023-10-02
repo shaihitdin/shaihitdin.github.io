@@ -1,0 +1,19 @@
+
+<h1> Second Form of UFF with autocomplete</h1>
+
+<form action="third_form.html">
+<input name="password" type="password"/>
+<button class="button"> Press me!</button>
+</form>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "third_form.html";
+    };
+    window.onload = (event) =>
+    {
+        const params = new URLSearchParams(document.location.search);
+        const s = params.get("hello");
+        document.getElementById("second_form").value = s
+    };
+</script>
