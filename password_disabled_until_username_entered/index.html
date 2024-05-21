@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  var button = document.getElementById("button");
+  var text = document.getElementById("textField");
+
+  button.addEventListener('click', function() {
+    button.disabled = false;
+  });
+
+</script>
+
+<form>
+  <input id="username" />
+  <input id="password" type="password" disabled=true />
+  <button id="button">
+    Click to enable password field
+  </button>
+</form>
